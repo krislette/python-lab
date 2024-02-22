@@ -1,6 +1,6 @@
 # A tuple is like a list, but IMMUTABLE.
 # A tuple READ only.
-# A tuple is denoteed by parentheses.
+# A tuple is denoted by parentheses ().
 
 # Do's and don'ts in tuples:
 #       1. Can be READ.
