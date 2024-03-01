@@ -56,6 +56,10 @@ print(f"Popped: {deleted_value}, New dict: {student_one}")
 popped_item = student_one.popitem()             # Returns a tuple version of the popped key pair.
 print(f"Popped item: {popped_item}, New dict: {student_one}")
 
+# Deleting a value from the dict using 'del' keyword:
+del student_one["course"]
+print(f"New dict: {student_one}")
+
 # Deleting all values from a dict using clear method:
 print(f"Student one before clear: {student_one}")
 student_one.clear()
@@ -73,6 +77,9 @@ print(student_two.keys())
 # Getting all values inside a dict:
 # Returns a list that contains all the values inside the dict.
 print(student_two.values())
+
+# Getting all key pairs inside a dict:
+print(student_two.items())
 
 # LIST OF DICTIONARIES
 #   - are dictionaries inside a list.
@@ -134,3 +141,38 @@ print(person_two.get("attributes").get("weight"))
 
 # Getting a dict inside a dict:
 print(person_one["attributes"])
+
+# Updating multiple values inside a dict using the update() method:
+student = {
+    "name": "Acelle",
+    "age": 18,
+    "courses": [
+        "Math",
+        "CompSci"
+    ]
+}
+print(f"Current dict: {student}")
+
+# This takes a dictionary as a parameter if we want to edit/add multiple keys inside a dict.
+student.update({
+    "name": "Regina",
+    "phone": "09159442848"
+})
+print(f"Updated dict: {student}")
+
+# Looping through a dict:
+# Gets the keys inside the dict:
+random_numbers = {
+    "favorite": 8,
+    "love": 6,
+    "memorable": 18,
+}
+
+print("Here are the keys inside random_numbers:")
+for key in random_numbers:
+    print(key)
+
+# Gets the keys and values inside the dict using items() method:
+for key, value in random_numbers.items():
+    print(f"Key: {key}")
+    print(f"Value: {value}")
