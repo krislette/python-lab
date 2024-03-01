@@ -173,6 +173,7 @@ for key in random_numbers:
     print(key)
 
 # Gets the keys and values inside the dict using items() method:
+print("Here are the keys and values inside random_numbers:")
 for key, value in random_numbers.items():
     print(f"Key: {key}")
     print(f"Value: {value}")
